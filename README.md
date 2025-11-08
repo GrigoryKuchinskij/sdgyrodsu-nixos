@@ -18,7 +18,9 @@ inputs = {
 # configuration.nix
 
 programs.nix-ld.enable = true;
-
+nixpkgs.overlays = [
+      inputs.sdgyrodsu.overlays.default
+    ];
 environment.systemPackages = with pkgs; [
     sdgyrodsu
 ];
