@@ -28,7 +28,6 @@
           default = pkgs.mkShell {
             buildInputs = with pkgs;
               [
-                usbutils
                 nixpkgs-fmt
               ];
           };
@@ -42,7 +41,7 @@
         let
           pkgs = nixpkgsFor.${system};
         in
-        lib.makeScope pkgs.newScope (final: self.overlays.default final pkgs)
+          lib.makeScope pkgs.newScope (final: self.overlays.default final pkgs)
       );
     };
 }

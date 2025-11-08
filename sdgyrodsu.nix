@@ -1,5 +1,5 @@
 {
-  #lib,
+  lib,
   stdenv,
   fetchFromGitHub,
   ncurses,
@@ -39,9 +39,9 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-#   meta = with lib; {
-#     description = "Cemuhook DSU server for the Steam Deck Gyroscope";
-#     homepage = "https://github.com/kmicki/SteamDeckGyroDSU";
-#     license = licenses.mit;
-#   };
+  meta = with lib; {
+    description = "Cemuhook DSU server for the Steam Deck Gyroscope";
+    homepage = "https://github.com/kmicki/SteamDeckGyroDSU";
+    license = licenses.mit;
+  };
 })
