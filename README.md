@@ -19,12 +19,14 @@ programs.nix-ld.enable = true;
 environment.systemPackages = with pkgs; [
     sdgyrodsu
 ];
+```
 
 ## Running installed program
 
 ```bash
 sdgyrodsu
 ```
+
 ## Running program from flake
 
 ```bash
