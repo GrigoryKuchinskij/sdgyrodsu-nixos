@@ -1,6 +1,6 @@
 # SDGyroDSU-nixos
 
-SDGyroDSU packaged for NixOS.
+SteamDeckGyroDSU packaged for NixOS.
 This package is based on: 
 https://github.com/Jovian-Experiments/Jovian-NixOS
 https://github.com/kmicki/SteamDeckGyroDSU
